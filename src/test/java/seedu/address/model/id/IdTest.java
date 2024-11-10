@@ -33,9 +33,16 @@ public class IdTest {
         assertFalse(Id.isValidId("kk12658j")); // alphanumeric characters
         assertFalse(Id.isValidId("A0276123J20")); // with capital letters
         assertFalse(Id.isValidId("A0276123J20 A2552 6456 R20")); // long names
+        assertFalse(Id.isValidId("1234567890")); // 10 numbers
+        assertFalse(Id.isValidId("2147483647")); // Integer.MAX_VALUE
+        assertFalse(Id.isValidId("2147483648")); // Integer.MAX_VALUE + 1
+        assertFalse(Id.isValidId("-2147483647")); // Integer.MIN_VALUE
+        assertFalse(Id.isValidId("-2147483648")); // Integer.MIN_VALUE - 1
 
         // EP: valid id
         assertTrue(Id.isValidId("12345")); // numbers only
+        assertTrue(Id.isValidId("12345678")); // 8 numbers
+        assertTrue(Id.isValidId("123456789")); // 9 numbers
     }
 
     @Test
