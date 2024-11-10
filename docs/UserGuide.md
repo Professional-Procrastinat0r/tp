@@ -159,7 +159,7 @@ Format: `help`
 
 Format: `add id/EMPLOYEE_ID n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS [t/TAG]… [s/SKILL]…​`
 
-- Employee Id must be: [*Numeric*](#numeric), no spaces, unique amongst employees
+- Employee Id must be: [*Numeric*](#numeric), no spaces, 9 characters or fewer, unique amongst employees
 
   > [!NOTE]
   > Employee IDs are compared numerically. `0001` is treated the same as `1`.
@@ -316,7 +316,7 @@ Expected output:
 
 Format: `addproject pid/PROJECT_ID pn/PROJECT_NAME [s/SKILL]...`
 
-- Project Id must be: [*Numeric*](#numeric), no spaces, unique amongst projects
+- Project Id must be: [*Numeric*](#numeric), no spaces, 9 characters or fewer, unique amongst projects
 
   > [!NOTE]
   > Project IDs are compared numerically. `0001` is treated the same as `1`.
@@ -451,7 +451,7 @@ Expected output:
 
 Format: `assign aid/ASSIGNMENT_ID pid/PROJECT_ID id/EMPLOYEE_ID`
 
-- Assignment Id must be: [*Numeric*](#numeric), no spaces, unique amongst assignments
+- Assignment Id must be: [*Numeric*](#numeric), no spaces, 9 characters or fewer, unique amongst assignments
 
   > [!NOTE]
   > Assignment IDs are compared numerically. `0001` is treated the same as `1`.
