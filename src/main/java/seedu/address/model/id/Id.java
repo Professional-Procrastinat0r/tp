@@ -9,12 +9,12 @@ import static seedu.address.commons.util.AppUtil.checkArgument;
  */
 public class Id {
     public static final String MESSAGE_CONSTRAINTS =
-            "ID should only contain numeric characters";
+            "ID created should only contain numeric characters, and be at most 9 characters long.";
 
     /*
      * Only numbers are allowed
      */
-    public static final String VALIDATION_REGEX = "[0-9]+";
+    public static final String VALIDATION_REGEX = "[0-9]{1,9}";
 
     public final String value;
 
