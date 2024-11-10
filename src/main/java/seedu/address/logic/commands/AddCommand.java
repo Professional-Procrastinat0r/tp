@@ -42,10 +42,10 @@ public class AddCommand extends Command {
             + PREFIX_PHONE + "98765432 "
             + PREFIX_EMAIL + "johnd@example.com "
             + PREFIX_ADDRESS + "311, Clementi Ave 2, #02-25 "
-            + PREFIX_TAG + "friends "
-            + PREFIX_TAG + "owesMoney "
-            + PREFIX_SKILL + "thievery "
-            + PREFIX_SKILL + "moneyManagement";
+            + PREFIX_TAG + "SWE "
+            + PREFIX_TAG + "Designer "
+            + PREFIX_SKILL + "React "
+            + PREFIX_SKILL + "UIUX";
 
     public static final String MESSAGE_SUCCESS = "New employee added: %1$s";
     public static final String MESSAGE_DUPLICATE_EMPLOYEE = "This employee already exists in the address book."
